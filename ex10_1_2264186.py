@@ -10,7 +10,7 @@ def tansaku():
           tansaku()
         
         if (int(x/100))/(int(x%100))==3:
-            print("{}/{}=13".format((int(x/100)),(int(x%100))))    
+            print("{}/{}=3".format((int(x/100)),(int(x%100))))    
 
         undo(dy)
             

@@ -73,4 +73,5 @@ def henkan(data:list):
       
 tansaku(0,1,5)
 henkan(keep)
+print("手数：{:d}".format(mini+1))
 print(anskeep)
