@@ -8,14 +8,13 @@ data=[
     [8,0,5,5,5,2,5,5,5,3,8,8,8,8,8],
     [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
 ]
-number=0
 ans=[0]
 mini=7
 keep=None
 anskeep=None
 
 def tansaku(i:int,x:int,y:int):
-    global data,number,ans,mini,keep,anskeep
+    global data,ans,mini,keep,anskeep
     move_vec=[(1,0),(1,-1),(1,1),(0,1),(0,-1),(-1,-1)]
     
     for dx,dy in move_vec:
@@ -27,6 +26,7 @@ def tansaku(i:int,x:int,y:int):
                 move_to(x1,y1)
                 x1+=dx
                 y1+=dy
+
             if data[y1][x1]==4:
                 mini=i
                 ans.append(4)
